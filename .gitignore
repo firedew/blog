@@ -1,4 +1,6 @@
-.vitepress
 .idea
 
 node_modules
+
+docs/.vitepress
+!docs/.vitepress/config.ts
