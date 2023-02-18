@@ -1,0 +1,59 @@
+---
+layout: ../../layouts/MarkdownArticleLayout.astro
+title: Blogging with Astro
+author: Swaana Snorradottir
+pubDate: 2023-02-12
+tags: ["blogging"]
+---
+
+# Blogging with Astro
+
+This is where I may start writing about my journey to blog with Astro.
+
+The very first thing I notice is that I will need a lot of boiler plate before my site looks nice. This was not the
+case with VitePress. However, I also realize that this is due to the large amount of flexibility which is less
+evident in VitePress. Although, they do have a theming engine and are intending to ship more features it is simply
+more stripped down at the time of writing this post.
+
+With Astro I expect to need to write more initially, but I also expect to have more control and flexibility which at
+this point I still quite like. Or at leas, I hope that I will thank myself for this at some point.
+
+## Add MDX support
+Shortly after beginning with Astro I decided I would probably prefer to use markdown files as my pages will be heavy
+on content. Adding support for it in Astro was super easy and worked right away. At this point I also noticed the
+large amount of plugins for Astro.
+
+## Styling with Tailwind
+Although I'm still not 100% convinced of Tailwind I do think it will kickstart this website for me in the beginning.
+As my design will probably take shape later on I suspect that I will navigate away from Tailwind. I find Tailwind to
+add too much bloating to my templates due to the verboseness of all the utility classes. The way to mitigate that is
+by using wrapper components. Which I may end up doing, but for now, Tailwind should suit my purpose.
+
+So, just after I added Tailwind I see all style removed and I remembered that with Tailwind and MDX I have to start
+telling my IDE all the styling I need. This will be too much work. I want the pages to be very small footprint and
+this style reset and then full rewrite is actually too much effort. I'm therefore abandoning Tailwind again. I'll
+just write some css myself.
+
+## Issues with Webstorm
+Somewhere during my career I started using Webstorm as an IDE, and now I'm attached. I like this IDE very much and I
+know it well so my speed in development is optimal in this IDE. Later Visual Code came along and is blazingly
+popular, but I haven't been able to adopt it.
+
+When starting in Astro on Webstorm I noticed that it's not supporting Astro. After a little bit of digging
+
+When I started the local dev the filewatcher would go off on any change in the .idea folder. As this folder is IDE
+specific it's unnecessary for the watcher to also respond to these changes. After a little bit of Googling I found
+a suggestion to turn this off in the `vite.server.watch.ignored` configuration.
+
+```javascript
+// astro.config.mjs
+export default defineConfig({
+  vite: {
+    server: {
+      watch: {
+        ignored: ['**/.idea/*']
+      }
+    }
+  }
+})
+```
