@@ -79,3 +79,12 @@ body {
 .astro-code {
   padding: 16px;
 }
+
+.dark {
+  background-color: #1e1e20;
+  color: rgba(255, 255, 245, .86);
+}
+
+.dark .nav-links a {
+  color: rgba(255, 255, 245, .86);
+}
