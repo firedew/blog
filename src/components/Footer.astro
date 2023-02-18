@@ -1,0 +1,19 @@
+---
+import Social from './Social.astro';
+---
+
+<footer>
+  <div class="social">
+    <Social platform="github" username="swaana" />
+    <Social platform="gitlab" username="swaana" />
+  </div>
+  <p>Logo attribute: <a href="https://www.vectorstock.com/royalty-free-vector/flame-and-water-drop-logo-template-vector-27781956">Vector image by VectorStock / Razzan99</a></p>
+</footer>
+
+<style>
+  footer .social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+</style>
