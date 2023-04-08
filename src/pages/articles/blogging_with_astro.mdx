@@ -1,21 +1,73 @@
 ---
 layout: ../../layouts/MarkdownArticleLayout.astro
 title: Blogging with Astro
-author: Swaana Snorradottir
-pubDate: 2023-02-12
-tags: ["blogging"]
+author: Swaana Snorradóttir
+pubDate: 2023-02-19
+tags: ["blogging", "astro", "netlify"]
 ---
 
-# Blogging with Astro
+## Creating this blog
 
-This is where I may start writing about my journey to blog with Astro.
+This blog is created with Astro and hosted on Netlify. Both of these met my requirements (and more) when I was deciding
+what framework and tooling to use to build and host the FireDew blog. In this article I want to explain more about why I
+chose Astro and what I encountered while building this blog.
+
+For a full working example just head over to the source code of this blog [on Github](https://github.com/firedew/blog).
+
+## The requirements
+
+For the creation of the blog I broke the work into 3 main categories:
+* Create the blog project and design
+* Hosting and deployments
+* Create content
+
+While the order of work will be from top to bottom of that list I based my decisions from bottom to top. The
+majority of my time working on this blog will be to creating content. I expect to be deploying often
+as I hope to frequently create new articles. So in the end I want to start working on a project that supports easy
+content creation and easy deployments.
+
+Research on the web showed that there are great blog options out there already that already. [TODO: add other blog
+options here]
+These
+require no software development knowledge and let you dive right into content creation. It would have been an easy
+pick, but as a developer I like things more tech savvy. So that option wasn't even an option to begin with.
+
+Other than that I had some extra wishes such as:
+* Easy (and fun) to develop with
+* Reasonable control over design
+
+### Create content
+
+Ever tried creating a content heavy page using plain HTML? It quickly becomes very verbose and tough to edit as you
+are writing and editing longer pieces of text. This is where Markdown steps into play. It enables easier content
+creation which will eventually end up as HTML for the browser. It basically enables you to spend all your cognitive
+effort into text and editing. Markup and development has been abstracted away into abstracted away from the markup and
+development as
+
+My requirements were the following:
+* Render Markdown pages
+* Easy (and fun) to develop with
+* Reasonable control over design
+
+
+I first heard about Astro at the JSWorld conference in Amsterdam on february 8th 2023. Before that time, I had been
+toying
+with some website creations using VitePress or Nuxt. As a heavy Vue developer those were my goto frameworks to
+When I decided to create a blog one of the first steps was to decide which platform to use.
+With so
+many
+blogging platforms
+available, it can be hard to decide which one to use. If you're a developer who wants to take control of your blog's
+design and functionality, Astro is a great option to consider.
+
 
 The very first thing I notice is that I will need a lot of boiler plate before my site looks nice. This was not the
 case with VitePress. However, I also realize that this is due to the large amount of flexibility which is less
 evident in VitePress. Although, they do have a theming engine and are intending to ship more features it is simply
 more stripped down at the time of writing this post.
 
-With Astro I expect to need to write more initially, but I also expect to have more control and flexibility which at
+With Astro I expect to need to write more initially, but I also expect to have more control and flexibility
+which at
 this point I still quite like. Or at leas, I hope that I will thank myself for this at some point.
 
 ## Follow the tutorial on Astro docs
@@ -60,3 +112,23 @@ export default defineConfig({
   }
 })
 ```
+
+
+Astro is a modern static site builder that allows you to create fast, lightweight, and responsive websites. It's built with JavaScript, and it provides developers with a simple, intuitive way to build static sites with dynamic features. Astro makes it easy to create static sites that look and feel like dynamic web applications.
+
+One of the best things about Astro is that it's designed specifically for developers. It allows you to use familiar tools and workflows, like React components and npm packages, to build your site. This makes it easy to create custom designs, layouts, and features that are tailored to your specific needs.
+
+If you're interested in using Astro for your blog, here are some steps to get started:
+
+1. Install Astro: You can install Astro using npm or Yarn. Once installed, you can create a new Astro project using
+the astro create command.
+2. Choose a theme: Astro has a range of pre-built themes that you can use to get started. These themes are built with
+popular CSS frameworks like Tailwind and Bootstrap, and they provide a solid foundation for building your blog.
+3. Customize your theme: Once you've chosen a theme, you can customize it to suit your needs. You can use Astro's
+built-in layout system to create custom layouts, and you can add your own CSS to style your site.
+4. Add content: With your theme and layout in place, you can start adding content to your blog. Astro uses Markdown to
+create posts, so you can easily create new posts using your favorite text editor.
+5. Publish your blog: When your blog is ready, you can use Astro's built-in deployment system to publish it to the web.
+Astro makes it easy to deploy your site to services like Netlify, Vercel, or GitHub Pages.
+
+Blogging with Astro is a great way to create a fast, responsive, and customizable blog that's tailored to your specific needs. With its intuitive developer-focused approach, Astro makes it easy to create dynamic static sites that are optimized for performance and speed. So if you're looking for a powerful and flexible blogging platform, give Astro a try and see what you can create!
