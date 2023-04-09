@@ -1,0 +1,97 @@
+---
+layout: ../../layouts/MarkdownArticleLayout.astro
+title: Blogging with Astro
+author: Swaana Snorradóttir
+pubDate: 2023-04-09
+tags: ["blogging", "astro", "netlify", "tailwind"]
+image: { url: '/assets/laptop-hands.jpeg', alt: 'Laptop' }
+---
+
+## Beginner blogger
+
+So I decided to create a blog. But where to start?
+
+In the end I went with:
+* Astro with Tailwind and Vue for development
+* Markdown for content
+* Netlify for hosting
+
+For a full working example just head over to the source code of this blog [on Github](https://github.com/firedew/blog).
+
+### Why Astro?
+I first heard about [Astro](https://astro.build/) at the JSWorld conference in Amsterdam on february 8th 2023, and
+was immediately intrigued. As a huge fan of [JamStack](https://jamstack.org/) this framework simply fit my needs right
+away.
+
+Astro a modern static site builder that allows you to create fast, lightweight, and responsive websites. It provides
+developers with a simple, intuitive way to build static sites with dynamic features. Astro makes it easy to create
+static sites that look and feel like dynamic web applications.
+
+One of the best things about Astro is that it's designed specifically for developers. It allows you to use familiar
+tools and workflows, like Vue components, Tailwind css and npm packages to build your site. This makes it easy to
+create custom designs, layouts, and features that are tailored to your specific needs.
+
+### Why Markdown?
+Ever tried creating a content heavy page using plain HTML? It quickly becomes very verbose and tough to edit as you
+are writing and editing longer pieces of text. This is where Markdown comes into play.
+
+It enables easier content creation which will eventually end up as HTML for the browser. It basically enables you to
+spend all your cognitive effort into text and editing rather than markup and style.
+
+### Why Netlify?
+Moving your site from development to production can be done in so many ways. [Netlify](https://www.netlify.com/) is
+a developer friendly hosting platform. It hooks
+straight into the flow of git based repositories that developers are so familiar with. For each PR it can create
+staged deployments, and it will automatically deploy anything in the default branch (main).
+
+## The journey
+Although I use very straight forward and already established tools out there I did run into some issues along the
+way. Below are some of the issues I ran into and some tips for other who may be going through a similar process.
+
+### Follow the tutorial on Astro docs
+Astro has a [very good tutorial](https://docs.astro.build/en/tutorial/0-introduction/) on their site that walks you
+through the various options gets you familiar with the
+Astro way of working. Incidentally the tutorial was about creating a Blog :)
+
+## Add MDX support
+Shortly after beginning with Astro I decided I would probably prefer to use markdown files as my pages will be heavy
+on content. Also I am likely to want custom components within Markdown, so I went straight ahead to MDX. Adding support
+for it in Astro was super easy and worked right away. At this point I also noticed the large amount of plugins for
+Astro.
+
+## Styling with Tailwind
+Although I'm still not 100% convinced of Tailwind I did in the end stick with it. I find that it gets verbose in
+classnames and re-usability heavily relies on shared components which is not always as DX friendly as I would like.
+Nevertheless, the kick-start that Tailwind provides simply outweighs any downsides so far.
+
+There was [an Astro boilerplate project](https://creativedesignsguru.com/demo/astro-boilerplate/) that convinced me
+in the end where I saw a good configuration using Tailwind in combination with Markdown. This boilerplate uses React
+however and I have a strong preference for Vue so I grabbed the good stuff from there and used that in my own blog.
+If you like React however (or are simply not opinionated yet) then this boilerplate probably meets your needs right
+away!
+
+## Issues with Webstorm
+Somewhere during my career I started using Webstorm as an IDE, and now I'm hooked. I like this IDE very much and I
+know it well so my speed in development is optimal in this IDE. Later Visual Code came along and is crazy
+popular, but I haven't been able to adopt it.
+
+Webstorm only recently added support for Astro (actually during the creation of this blog) in version
+[2023.1](https://www.jetbrains.com/webstorm/whatsnew/?utm_source=product&utm_medium=link&utm_campaign=WS&utm_content=2023.1)
+
+
+There was one issue where in local dev mode the Astro filewatcher would go off on any change in the .idea folder.
+As this folder is IDE specific it's unnecessary for the watcher to respond to these changes. After a little bit of
+Googling I found a suggestion to turn this off in the `vite.server.watch.ignored` configuration.
+
+```javascript
+// astro.config.mjs
+export default defineConfig({
+  vite: {
+    server: {
+      watch: {
+        ignored: ['**/.idea/*']
+      }
+    }
+  }
+})
+```
