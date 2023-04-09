@@ -1,18 +1,16 @@
 ---
+import Section from '../components/Section.astro'
 ---
 
-<footer>
-  <p><small>Logo attribute: <a href="https://www.vectorstock.com/royalty-free-vector/flame-and-water-drop-logo-template-vector-27781956">Vector image by VectorStock / Razzan99</a></small></p>
+<footer class="sticky top-[100vh]">
+  <Section>
+    <p>
+      <small>
+        Logo attribute:
+        <a href="https://www.vectorstock.com/royalty-free-vector/flame-and-water-drop-logo-template-vector-27781956" target="_blank">
+          Vector image by VectorStock / Razzan99
+        </a>
+      </small>
+    </p>
+  </Section>
 </footer>
-
-<style>
-  footer {
-    text-align: center;
-  }
-
-  footer .social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-</style>

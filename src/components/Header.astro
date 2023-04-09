@@ -1,12 +1,10 @@
 ---
 import Navigation from './Navigation.astro';
-import ThemeIcon from './ThemeIcon.astro';
-import Hamburger from './Hamburger.astro';
+import Brand from './Brand.astro';
 ---
-<header>
-  <nav class="nav">
-    <Hamburger />
+<header class="mx-auto max-w-screen-lg px-3 py-6">
+  <nav class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between">
+    <Brand />
     <Navigation />
-    <ThemeIcon />
   </nav>
 </header>

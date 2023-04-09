@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import '../styles/global.css'
+import Section from '../components/Section.astro'
 const { pageTitle } = Astro.props
 ---
 <html lang="en">
@@ -15,21 +15,17 @@ const { pageTitle } = Astro.props
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-slate-900 text-gray-100 min-h-screen">
   <Header/>
 
   <main>
-    <div class="page">
-      <h1>{pageTitle}</h1>
+    <Section>
+      <h1 class="text-3xl font-bold">{pageTitle}</h1>
 
       <slot/>
-    </div>
+    </Section>
   </main>
 
   <Footer/>
-
-  <script>
-    import '../scripts/menu.js'
-  </script>
 </body>
 </html>
