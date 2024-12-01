@@ -14,15 +14,15 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/rss": "^4.0.0",
-    "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "@astrojs/vue": "^4.0.0",
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "@astrojs/vue": "^4.5.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^4.0.0",
+    "astro": "^4.16.16",
     "tailwindcss": "^3.3.1",
-    "vue": "^3.2.30"
+    "vue": "^3.5.13"
   }
 }
