@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.8609162"
+     inkscape:cx="3.4953838"
+     inkscape:cy="44.391374"
+     inkscape:window-width="1792"
+     inkscape:window-height="1005"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5">
+    <sodipodi:guide
+       position="0,31.999998"
+       orientation="0,22.064896"
+       id="guide8"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="32.157531,-12.391374"
+       orientation="31.999998,0"
+       id="guide9"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="22.064896,0"
+       orientation="0,-22.064896"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-31.999998,0"
+       id="guide11"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs5">
+    <radialGradient
+       gradientTransform="translate(218.98021)"
+       gradientUnits="userSpaceOnUse"
+       r="662.03003"
+       fy="1199.0699"
+       fx="315.98999"
+       cy="1199.0699"
+       cx="315.98999"
+       id="New_Gradient_orange">
+      <stop
+         stop-color="#f8ff2a"
+         offset="0"
+         id="stop1" />
+      <stop
+         stop-color="#e55500"
+         offset="0.59"
+         id="stop2" />
+      <stop
+         stop-color="#bf5500"
+         offset="1"
+         id="stop3" />
+    </radialGradient>
+    <radialGradient
+       xlink:href="#New_Gradient_orange"
+       r="1221.84"
+       fy="506.01001"
+       fx="168.98"
+       cy="506.01001"
+       cx="168.98"
+       id="New_Gradient_orange-2" />
+    <radialGradient
+       gradientTransform="translate(218.98021)"
+       gradientUnits="userSpaceOnUse"
+       r="596.84003"
+       fy="929.04999"
+       fx="1057.0699"
+       cy="929.04999"
+       cx="1057.0699"
+       id="New_Gradient_blue">
+      <stop
+         stop-color="#00c2f0"
+         offset="0"
+         id="stop4" />
+      <stop
+         stop-color="#1a3b6e"
+         offset="1"
+         id="stop5" />
+    </radialGradient>
+    <radialGradient
+       xlink:href="#New_Gradient_blue"
+       r="589.15997"
+       fy="947.04999"
+       fx="448.01001"
+       cy="947.04999"
+       cx="448.01001"
+       id="New_Gradient_blue-2" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#New_Gradient_orange"
+       id="radialGradient7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(218.98021)"
+       cx="315.98999"
+       cy="1199.0699"
+       fx="315.98999"
+       fy="1199.0699"
+       r="662.03003" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#New_Gradient_blue"
+       id="radialGradient8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(218.98021)"
+       cx="1057.0699"
+       cy="929.04999"
+       fx="1057.0699"
+       fy="929.04999"
+       r="596.84003" />
+  </defs>
+  <g
+     id="g5"
+     transform="translate(-701.59706,-257.8028)">
+    <title
+       id="title5">Layer 1</title>
+    <g
+       id="Layer_1-2"
+       style="display:inline">
+      <g
+         id="svg_1"
+         transform="matrix(0.02268329,0,0,0.02268329,701.5974,257.8028)">
+        <path
+           id="svg_2"
+           fill="url(#New_Gradient_orange)"
+           fill-rule="evenodd"
+           d="M 677.07019,0 C 783.8302,390.35999 179.28021,601.65997 225.57021,1003.64 c 21.86,191.96 127.37999,293.74 284.29997,364.57 72.01001,32.2201 199.39001,42.52 199.39001,42.52 -95.23999,-64.4199 -262.44,-206.11 -259.85001,-351.69 5.14999,-273.17 280.42001,-413.58999 301.00003,-620.99999 39.87,284.75003 -304.85999,407.11002 -225.11005,684.14009 -10.28998,-143.02006 186.5,-316.95005 255.97003,-429.04008 C 965.2202,398.10001 944.65019,215.15 677.07018,9.9999997e-6 v 0 z"
+           class="cls-4"
+           style="fill:url(#radialGradient7)" />
+        <path
+           id="svg_3"
+           fill="url(#New_Gradient_orange-2)"
+           fill-rule="evenodd"
+           d="M 677.07019,0 C 783.8302,390.35999 185.70021,578.46997 220.44022,994.58002 243.57021,1269.02 482.83023,1404.3001 709.2602,1410.73 401.80024,1294.79 291.18024,1069.3301 462.25022,809.09003 c 90.04001,-136.58002 235.39999,-224.18005 288.16,-371.05002 30.87006,224.16 -174.94,347.84 -225.10999,525.63998 C 590.8902,829.71002 683.49023,791.02002 758.10022,658.33001 886.75024,427.73 879.06024,197.12002 684.82025,6.43999 c -2.59003,-2.59 -5.15002,-3.87 -7.74005,-6.4399999999999 v 0 h -0.01 z"
+           class="cls-2"
+           style="fill:url(#New_Gradient_orange-2)" />
+        <path
+           id="svg_4"
+           fill-rule="evenodd"
+           fill="url(#New_Gradient_blue)"
+           d="m 944.65021,320.79999 c 1.27002,2.57001 2.54999,5.14999 2.54999,7.70999 101.65,246.07999 113.21,488.31003 56.62,642.90005 C 956.21021,1097.6801 893.15022,1131.1801 831.43019,1118.3 751.67024,1101.55 698.96022,1017.79 772.2502,883.79003 c 37.32001,-66.96002 81.02002,-144.30005 114.48004,-229.31 -75.89001,122.38 -191.65002,229.31 -252.10004,341.41998 C 464.84022,1306.39 952.34022,1604 1150.4402,1154.36 c 91.3099,-206.11996 34.74,-523.06998 -205.81,-833.55997 v 0 l 0.02,-6e-5 z"
+           class="cls-1"
+           style="fill:url(#radialGradient8)" />
+        <path
+           id="svg_5"
+           fill="url(#New_Gradient_blue-2)"
+           fill-rule="evenodd"
+           d="m 944.65021,320.79999 c 1.27002,2.57001 2.54999,5.14999 2.54999,7.70999 101.65,246.07999 113.21,488.31003 56.62,642.90005 C 956.21021,1097.6801 893.15022,1131.1801 831.43019,1118.3 751.67024,1101.55 698.96022,1017.79 772.2502,883.79003 809.57021,816.83001 853.27022,739.48998 886.73024,653.17998 810.84023,776.86003 695.08022,883.79003 634.6302,995.90001 571.58021,1109.24 598.62019,1221.36 665.5002,1294.78 c 115.76001,72.15 288.10999,55.4 405.19,-155.9 105.47,-189.37001 77.16,-498.57997 -126.04999,-818.08 v 0 l 0.01,-3e-5 z"
+           class="cls-3"
+           style="fill:url(#New_Gradient_blue-2)" />
+      </g>
+    </g>
+  </g>
+</svg>
