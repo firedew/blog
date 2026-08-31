@@ -14,14 +14,14 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^4.0.0",
+    "@astrojs/mdx": "^8.0.0",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^6.0.0",
-    "@astrojs/vue": "^5.0.0",
+    "@astrojs/vue": "^7.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^5.0.0",
+    "astro": "^7.0.0",
     "tailwindcss": "^3.3.1",
     "vue": "^3.5.13"
   }
