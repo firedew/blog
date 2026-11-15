@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Raleway", sans-serif;
+}
+
+@plugin "@tailwindcss/typography";
+
+@utility max-w-screen-lg {
+  max-width: var(--breakpoint-lg);
+}
+
+@utility bg-gradient-to-br {
+  --tw-gradient-position: to bottom right;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
