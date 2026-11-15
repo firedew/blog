@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 
 const pageTitle = 'Article tags'
-const allArticles = await Astro.glob('../articles/*.md(|x)');
+const allArticles = Object.values(import.meta.glob('/src/pages/articles/*.{md,mdx}', { eager: true }));
 const tags = [...new Set(allArticles.map((article) => article.frontmatter.tags).flat())];
 
 ---
