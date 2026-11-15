@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 
-const allPosts = await Astro.glob('../pages/articles/*.md(x|)');
+const allPosts = Object.values(import.meta.glob('/src/pages/articles/*.{md,mdx}', { eager: true }));
 const pageTitle = 'Welcome to my amazing blog'
 ---
 <BaseLayout pageTitle={pageTitle}>
