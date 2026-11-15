@@ -24,3 +24,6 @@ pnpm-debug.log*
 
 # VitePress
 docs/.vitepress
+
+# local environment variables
+.env.local
