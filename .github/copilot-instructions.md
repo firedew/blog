@@ -14,6 +14,11 @@
 - There is no test or lint script currently defined in `package.json`. Do not claim those checks ran; do not add tooling unless the task calls for it.
 - For changes affecting the site or its dependencies, run `npm ci` and `npm run build` when feasible. Report any checks that could not be run and why.
 
+## GitHub authentication
+
+- For GitHub operations in this repository, use the fine-grained PAT in `GH_TOKEN` from the ignored `.env.local` file. Do not configure user-level `gh` authentication.
+- Pass the token only to the commands that need it; do not print, commit, or store it in Git configuration. For HTTPS Git operations, use `gh auth git-credential` as a temporary credential helper.
+
 ## Branching
 
 - Create a new branch from `main` for every change; do not make changes directly on `main`.
